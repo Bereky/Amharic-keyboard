@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amharic Keyboard</title>
+     
+    <!-- WEB BASED AMHARIC KEYBOARD: DESIGNED BY BEREKET LEMMA -->
+    <!-- የአማርኛ ኪቦርድ -->
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+    
+    <div class="container">
+        <p>Web based Amharic keyboard, Designed by <strong> <a href="https://facebook.com/backypac1996">Bereket Lemma</a></strong> </p>
+        <div class="header">
+            <h1>የአማርኛ ኪቦርድ </h1> 
+        </div>
+        <div class="display">
+            <input class="textArea" type="text" >
+            <div class="buttons">
+                <button class="btn btn-warning" onclick="copyText()">Copy</button>
+                <button class="btn btn-warning" onclick="clearInput()">Clear</button>
+                <button class="btn btn-warning" onclick="deleteChar()">Del</button>
+            </div>
+            
+        </div>
+        <div class="children">
+            <button class="one btn btn-primary" onclick="typeWord(1)"></button>
+            <button class="two btn btn-primary" onclick="typeWord(2)"></button>
+            <button class="three btn btn-primary" onclick="typeWord(3)"></button>
+            <button class="four btn btn-primary" onclick="typeWord(4)"></button>
+            <button class="five btn btn-primary" onclick="typeWord(5)"></button>
+            <button class="six btn btn-primary" onclick="typeWord(6)"></button>
+            <button class="seven btn btn-primary" onclick="typeWord(7)"></button>
+            <button class="eight btn btn-primary" onclick="typeWord(8)"></button>
+        </div>
+        <div class="parents">
+            <div class="parent parent-one">
+                <button class="btn btn-success" onclick="expose(1)"> <span class="keyboard">ሀ</span></button>
+                <button class="btn btn-success" onclick="expose(2)"> <span class="keyboard">ለ</span></button>
+                <button class="btn btn-success" onclick="expose(3)"> <span class="keyboard">ሐ</span></button>
+                <button class="btn btn-success" onclick="expose(4)"> <span class="keyboard">መ</span></button>
+                <button class="btn btn-success"  onclick="expose(5)"> <span class="keyboard">ሠ</span></button>
+                <button class="btn btn-success" onclick="expose(6)"> <span class="keyboard">ረ</span></button>
+                <button class="btn btn-success"  onclick="expose(7)"> <span class="keyboard">ሰ</span></button>
+                <button class="btn btn-success" onclick="expose(8)"> <span class="keyboard">ሸ</span></button>
+                <button class="btn btn-success" onclick="expose(9)"> <span class="keyboard">ቀ</span></button>
+                <button class="btn btn-success"  onclick="expose(10)"> <span class="keyboard">በ</span></button>
+                <button class="btn btn-success" onclick="expose(11)"> <span class="keyboard">ተ</span></button>
+            </div>
+            <div class="parent parent-two">
+                <button class="btn btn-success" onclick="expose(12)"> <span class="keyboard">ቸ</span></button>
+                <button class="btn btn-success" onclick="expose(13)"> <span class="keyboard">ኀ</span></button>
+                <button class="btn btn-success" onclick="expose(14)"> <span class="keyboard">ነ</span></button>
+                <button class="btn btn-success" onclick="expose(15)"> <span class="keyboard">ኘ</span></button>
+                <button class="btn btn-success" onclick="expose(16)"> <span class="keyboard">አ</span></button>
+                <button class="btn btn-success" onclick="expose(17)"> <span class="keyboard">ከ</span></button>
+                <button class="btn btn-success" onclick="expose(18)"> <span class="keyboard">ኸ</span></button>
+                <button class="btn btn-success" onclick="expose(19)"> <span class="keyboard">ወ</span></button>
+                <button class="btn btn-success" onclick="expose(20)"> <span class="keyboard">ዐ</span></button>
+                <button class="btn btn-success" onclick="expose(21)"> <span class="keyboard">ዘ</span></button>
+                <button class="btn btn-success" onclick="expose(22)"> <span class="keyboard">ዠ</span></button>
+            </div>
+       
+            <div class="parent parent-three">
+                <button class="btn btn-success" onclick="expose(23)"> <span class="keyboard">የ</span></button>   
+                <button class="btn btn-success" onclick="expose(24)"> <span class="keyboard">ደ</span></button>
+                <button class="btn btn-success" onclick="expose(25)"> <span class="keyboard">ጀ</span></button>
+                <button class="btn btn-success" onclick="expose(26)"> <span class="keyboard">ገ</span></button>
+                <button class="btn btn-success" onclick="expose(27)"> <span class="keyboard">ጠ</span></button>
+                <button class="btn btn-success" onclick="expose(28)"> <span class="keyboard">ጨ</span></button>
+                <button class="btn btn-success" onclick="expose(29)"> <span class="keyboard">ጰ</span></button>
+                <button class="btn btn-success" onclick="expose(30)"> <span class="keyboard">ጸ</span></button>
+                <button class="btn btn-success" onclick="expose(31)"> <span class="keyboard">ፀ</span></button>
+                <button class="btn btn-success" onclick="expose(32)"> <span class="keyboard">ፈ</span></button>
+                <button class="btn btn-success" onclick="expose(33)"> <span class="keyboard">ፐ</span></button>
+                <button class="btn btn-success" onclick="expose(34)"> <span class="keyboard">ቨ</span></button>
+            </div>
+            <div class="parent parent-fOUR">
+                <button class="btn btn-success keyboard-symbol" onclick="expose(0)"> <span class="keyboard">፣</span></button>
+                <button class="btn btn-success keyboard-number" onclick="expose(35)"> <span class="keyboard">፩</span></button>
+                <button class="btn btn-success keyboard-space" onclick="space()"> <span class="keyboard"></span></button>
+                <button class="btn btn-success keyboard-number" onclick="expose(36)"><span class="keyboard">፲</span></button>
+                <button class="btn btn-success keyboard-symbol" onclick="expose(37)"> <span class="keyboard">፻</span></button>
+            </div>
+        </div>
+    </div>
+
+            <!-- The JAVASCRIPT -->
+    <script src="main.js"></script>
+</body>
+</html>

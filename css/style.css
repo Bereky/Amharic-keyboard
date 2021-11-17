@@ -1,0 +1,77 @@
+.container .display, .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 55px;
+    color: rgb(221, 239, 255);
+}
+
+.header {
+    text-align: center;
+    height: 65px;
+    width: 100vw;
+    background-color: rgb(131, 137, 141);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.parents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.parent {
+    padding: 6px;
+}
+
+.children {
+    padding: 3px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    font-size: 900px; 
+}
+
+.buttons button {
+    margin: 2px;
+    width: 100px;
+}
+.textArea {
+    height:150px;
+    width: 50vw;
+    font-size: 25px;
+}
+
+.keyboard {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.keyboard-space {
+    height: 50px;
+    width: 270px;
+}
+
+.keyboard-number {
+    height: 50px;
+    width: 105px;
+}
+
+.container p {
+    text-align: center;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(160, 207, 248);
+}
